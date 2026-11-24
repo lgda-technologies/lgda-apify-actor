@@ -1,0 +1,1 @@
+{"actorOutputSchemaVersion":1,"properties":{"audioFiles":{"template":"{{links.apiDefaultKeyValueStoreUrl}}","title":"Delivered audio files (key-value store)","type":"string"},"overview":{"template":"{{links.apiDefaultDatasetUrl}}/items?view=overview","title":"Delivered tracks","type":"string"}},"title":"LGDA Wellness Music output"}
