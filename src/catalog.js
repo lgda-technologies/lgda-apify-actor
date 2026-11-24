@@ -2,10 +2,9 @@
 // Generated from ~/workspace/lgda-node-v2/catalog.json (verified 2026-11-17)
 // and ~/workspace/lgda-node-v2/base44_audio_urls.json.
 // Audio URLs are the public Base44 media URLs the LGDA Room page already
-// streams from — no audio files are bundled in this repo.
-// The 3 From Darkness Came Dust tracks have no public audio URL (they are
-// not Base44 Track records) and are NOT sold through this Actor; they are
-// available through the LGDA node at https://lgda-music.fly.dev.
+// streams from, plus the 3 From Darkness Came Dust tracks hosted on the
+// LGDA Room's GitHub Pages (they are not Base44 Track records, so they
+// have no Base44 media URL). No audio files are bundled in this repo.
 
 export const TRACK_PRICE_USD = 5.99;
 export const ALBUM_PRICE_USD = 14.99;
@@ -278,9 +277,9 @@ export const TRACKS = [
     "album": "From Darkness Came Dust",
     "artist": "Slator Blacc",
     "price_usd": 5.99,
-    "available_via_actor": false,
-    "audio_url": null,
-    "source_format": null,
+    "available_via_actor": true,
+    "audio_url": "https://lgda-technologies.github.io/lgda-room/audio/wont-shake.mp3",
+    "source_format": "mp3",
     "evidence": {
       "session_count": 0,
       "valid_sessions": 0,
@@ -295,9 +294,9 @@ export const TRACKS = [
     "album": "From Darkness Came Dust",
     "artist": "Slator Blacc",
     "price_usd": 5.99,
-    "available_via_actor": false,
-    "audio_url": null,
-    "source_format": null,
+    "available_via_actor": true,
+    "audio_url": "https://lgda-technologies.github.io/lgda-room/audio/out-the-window.mp3",
+    "source_format": "mp3",
     "evidence": {
       "session_count": 0,
       "valid_sessions": 0,
@@ -312,9 +311,9 @@ export const TRACKS = [
     "album": "From Darkness Came Dust",
     "artist": "Slator Blacc",
     "price_usd": 5.99,
-    "available_via_actor": false,
-    "audio_url": null,
-    "source_format": null,
+    "available_via_actor": true,
+    "audio_url": "https://lgda-technologies.github.io/lgda-room/audio/the-antidote.mp3",
+    "source_format": "mp3",
     "evidence": {
       "session_count": 0,
       "valid_sessions": 0,
@@ -542,7 +541,7 @@ export const ALBUMS = [
       "the-antidote"
     ],
     "price_usd": 14.99,
-    "available_via_actor": false
+    "available_via_actor": true
   },
   {
     "album_id": "the-golden-child",
@@ -579,8 +578,8 @@ export const ALBUMS = [
   }
 ];
 
-export const AVAILABLE_TRACK_IDS = ["midnight","the-southside","innocence","noir","done-told-y-all","i-did-it","tokyo","yellow-italy","31-wings","grand-entrance","stone-mountain","osoeastlakepark","blue-beamer","higher-ground","tripper","the-golden-child","been-with-us","no-conversation","black-summer","who","red-light","one-of-us","toothpick","pay-off"];
-export const AVAILABLE_ALBUM_IDS = ["black-foot-ronin-vol-two","black-foot-ronin","in-the-desert","75-maryvale-s","porter-ave","the-golden-child","bungaloo-blue","bungaloo-blue-vol-two"];
+export const AVAILABLE_TRACK_IDS = ["midnight","the-southside","innocence","noir","done-told-y-all","i-did-it","tokyo","yellow-italy","31-wings","grand-entrance","stone-mountain","osoeastlakepark","blue-beamer","higher-ground","tripper","wont-shake","out-the-window","the-antidote","the-golden-child","been-with-us","no-conversation","black-summer","who","red-light","one-of-us","toothpick","pay-off"];
+export const AVAILABLE_ALBUM_IDS = ["black-foot-ronin-vol-two","black-foot-ronin","in-the-desert","75-maryvale-s","porter-ave","from-darkness-came-dust","the-golden-child","bungaloo-blue","bungaloo-blue-vol-two"];
 
 export function getTrack(trackId) {
     return TRACKS.find((t) => t.track_id === trackId) ?? null;

@@ -1,5 +1,5 @@
 # LGDA Wellness Music Actor
-# Node.js 22 base image, plus ffmpeg: 14 of the 24 tracks are stored as WAV
+# Node.js 22 base image, plus ffmpeg: 14 of the 27 tracks are stored as WAV
 # masters and are transcoded to 320 kbps MP3 at runtime.
 FROM apify/actor-node:22
 

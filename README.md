@@ -71,9 +71,9 @@ Strongest evidence so far: Higher Ground, 520.8 ms mean RMSSD across 9 valid ses
 | BLUE BEAMER (`blue-beamer`) | Porter Ave | $5.99 | No sessions yet | Yes |
 | HIGHER GROUND (`higher-ground`) | Porter Ave | $5.99 | 520.8 ms mean RMSSD (9 valid sessions) | Yes |
 | TRIPPER (`tripper`) | Porter Ave | $5.99 | No sessions yet | Yes |
-| Won't Shake (`wont-shake`) | From Darkness Came Dust | $5.99 | No sessions yet | Via the node only |
-| Out The Window (`out-the-window`) | From Darkness Came Dust | $5.99 | No sessions yet | Via the node only |
-| The Antidote (`the-antidote`) | From Darkness Came Dust | $5.99 | No sessions yet | Via the node only |
+| Won't Shake (`wont-shake`) | From Darkness Came Dust | $5.99 | No sessions yet | Yes |
+| Out The Window (`out-the-window`) | From Darkness Came Dust | $5.99 | No sessions yet | Yes |
+| The Antidote (`the-antidote`) | From Darkness Came Dust | $5.99 | No sessions yet | Yes |
 | The Golden Child (`the-golden-child`) | The Golden Child | $5.99 | 429.8 ms mean RMSSD (6 valid sessions) | Yes |
 | Been With Us (`been-with-us`) | The Golden Child | $5.99 | 371.7 ms mean RMSSD (1 valid session) | Yes |
 | No Conversation (`no-conversation`) | The Golden Child | $5.99 | No sessions yet | Yes |
@@ -93,12 +93,12 @@ Strongest evidence so far: Higher Ground, 520.8 ms mean RMSSD across 9 valid ses
 | In The Desert (`in-the-desert`) | 3 | $14.99 | Yes |
 | 75 Maryvale's (`75-maryvale-s`) | 3 | $14.99 | Yes |
 | Porter Ave (`porter-ave`) | 3 | $14.99 | Yes |
-| From Darkness Came Dust (`from-darkness-came-dust`) | 3 | $14.99 | Via the node only |
+| From Darkness Came Dust (`from-darkness-came-dust`) | 3 | $14.99 | Yes |
 | The Golden Child (`the-golden-child`) | 3 | $14.99 | Yes |
 | Bungaloo Blue (`bungaloo-blue`) | 3 | $14.99 | Yes |
 | Bungaloo Blue Vol. Two (`bungaloo-blue-vol-two`) | 3 | $14.99 | Yes |
 
-Tracks marked "Via the node only" are the three From Darkness Came Dust tracks. They have no hosted audio file this Actor can fetch yet — buy them through the LGDA node at https://lgda-music.fly.dev (same $5.99 price, x402 USDC on Base).
+All 27 tracks and all 9 albums are available through this Actor.
 
 ## License
 
