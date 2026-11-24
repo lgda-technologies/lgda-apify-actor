@@ -1,1 +1,163 @@
-{"actorSpecification":1,"fields":{"album":{"description":"Album title.","type":"string"},"album_id":{"description":"Album identifier.","type":"string"},"artist":{"description":"Recording artist (Slator Blacc).","type":"string"},"disclaimer":{"description":"Wellness-music disclaimer.","type":"string"},"download_url":{"description":"API URL of the delivered MP3 in the run's key-value store. Fetch with an Apify API token, or use the Apify MCP server get-key-value-store-record tool with key_value_store_id and file_key.","format":"uri","type":"string"},"error":{"description":"True when the run failed to deliver anything. No charge is made on error items.","type":"boolean"},"error_code":{"description":"Machine-readable error code, present only on error items.","type":"string"},"error_message":{"description":"Human-readable error detail, present only on error items.","type":"string"},"event_charged":{"description":"The pay-per-event event charged for this delivery: track-delivered ($5.99) or album-delivered ($14.99).","type":"string"},"evidence":{"description":"Biometric evidence summary for this track: heart-rate variability (RMSSD) measured by camera during sessions while the track played. Nulls mean no sessions recorded for this track yet.","properties":{"mean_heart_rate_bpm":{"description":"Mean heart rate (bpm) across valid sessions, or null.","type":["number","null"]},"mean_rmssd_ms":{"description":"Mean RMSSD (ms) across valid sessions, or null.","type":["number","null"]},"note":{"description":"What the evidence numbers mean, honestly stated.","type":"string"},"valid_sessions":{"description":"Number of valid biometric sessions for this track.","type":"integer"}},"type":"object"},"file_key":{"description":"Key of the delivered audio file in the run's key-value store.","type":"string"},"file_size_bytes":{"description":"Size of the delivered audio file in bytes.","type":"integer"},"format":{"description":"Audio format of the delivered file: mp3 (320 kbps), or wav when the WAV master was delivered because transcoding was unavailable.","type":"string"},"key_value_store_id":{"description":"ID of the run's key-value store holding the delivered file.","type":"string"},"license":{"description":"Single-buyer license terms for the delivered track.","type":"string"},"price_usd":{"description":"Price charged for this delivery in USD.","type":"number"},"purchase":{"description":"Whether this item came from a track purchase or an album purchase.","type":"string"},"seller":{"description":"Seller: LGDA Technologies.","type":"string"},"title":{"description":"Track title.","type":"string"},"track_id":{"description":"Track identifier.","type":"string"}},"views":{"overview":{"description":"One row per delivered track.","display":{"component":"table","properties":{"album":{"format":"text","label":"Album"},"download_url":{"format":"link","label":"Download"},"evidence":{"format":"object","label":"Evidence"},"format":{"format":"text","label":"Format"},"price_usd":{"format":"number","label":"Price (USD)"},"title":{"format":"text","label":"Track"},"track_id":{"format":"text","label":"Track ID"}}},"title":"Delivered tracks","transformation":{"fields":["track_id","title","album","price_usd","format","download_url","evidence"]}}}}
+{
+  "actorSpecification": 1,
+  "fields": {
+    "type": "object",
+    "properties": {
+      "album": {
+        "description": "Album title.",
+        "type": "string"
+      },
+      "album_id": {
+        "description": "Album identifier.",
+        "type": "string"
+      },
+      "artist": {
+        "description": "Recording artist (Slator Blacc).",
+        "type": "string"
+      },
+      "disclaimer": {
+        "description": "Wellness-music disclaimer.",
+        "type": "string"
+      },
+      "download_url": {
+        "description": "API URL of the delivered MP3 in the run's key-value store. Fetch with an Apify API token, or use the Apify MCP server get-key-value-store-record tool with key_value_store_id and file_key.",
+        "format": "uri",
+        "type": "string"
+      },
+      "error": {
+        "description": "True when the run failed to deliver anything. No charge is made on error items.",
+        "type": "boolean"
+      },
+      "error_code": {
+        "description": "Machine-readable error code, present only on error items.",
+        "type": "string"
+      },
+      "error_message": {
+        "description": "Human-readable error detail, present only on error items.",
+        "type": "string"
+      },
+      "event_charged": {
+        "description": "The pay-per-event event charged for this delivery: track-delivered ($5.99) or album-delivered ($14.99).",
+        "type": "string"
+      },
+      "evidence": {
+        "description": "Biometric evidence summary for this track: heart-rate variability (RMSSD) measured by camera during sessions while the track played. Nulls mean no sessions recorded for this track yet.",
+        "properties": {
+          "mean_heart_rate_bpm": {
+            "description": "Mean heart rate (bpm) across valid sessions, or null.",
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "mean_rmssd_ms": {
+            "description": "Mean RMSSD (ms) across valid sessions, or null.",
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "note": {
+            "description": "What the evidence numbers mean, honestly stated.",
+            "type": "string"
+          },
+          "valid_sessions": {
+            "description": "Number of valid biometric sessions for this track.",
+            "type": "integer"
+          }
+        },
+        "type": "object"
+      },
+      "file_key": {
+        "description": "Key of the delivered audio file in the run's key-value store.",
+        "type": "string"
+      },
+      "file_size_bytes": {
+        "description": "Size of the delivered audio file in bytes.",
+        "type": "integer"
+      },
+      "format": {
+        "description": "Audio format of the delivered file: mp3 (320 kbps), or wav when the WAV master was delivered because transcoding was unavailable.",
+        "type": "string"
+      },
+      "key_value_store_id": {
+        "description": "ID of the run's key-value store holding the delivered file.",
+        "type": "string"
+      },
+      "license": {
+        "description": "Single-buyer license terms for the delivered track.",
+        "type": "string"
+      },
+      "price_usd": {
+        "description": "Price charged for this delivery in USD.",
+        "type": "number"
+      },
+      "purchase": {
+        "description": "Whether this item came from a track purchase or an album purchase.",
+        "type": "string"
+      },
+      "seller": {
+        "description": "Seller: LGDA Technologies.",
+        "type": "string"
+      },
+      "title": {
+        "description": "Track title.",
+        "type": "string"
+      },
+      "track_id": {
+        "description": "Track identifier.",
+        "type": "string"
+      }
+    }
+  },
+  "views": {
+    "overview": {
+      "description": "One row per delivered track.",
+      "display": {
+        "component": "table",
+        "properties": {
+          "album": {
+            "format": "text",
+            "label": "Album"
+          },
+          "download_url": {
+            "format": "link",
+            "label": "Download"
+          },
+          "evidence": {
+            "format": "object",
+            "label": "Evidence"
+          },
+          "format": {
+            "format": "text",
+            "label": "Format"
+          },
+          "price_usd": {
+            "format": "number",
+            "label": "Price (USD)"
+          },
+          "title": {
+            "format": "text",
+            "label": "Track"
+          },
+          "track_id": {
+            "format": "text",
+            "label": "Track ID"
+          }
+        }
+      },
+      "title": "Delivered tracks",
+      "transformation": {
+        "fields": [
+          "track_id",
+          "title",
+          "album",
+          "price_usd",
+          "format",
+          "download_url",
+          "evidence"
+        ]
+      }
+    }
+  }
+}
