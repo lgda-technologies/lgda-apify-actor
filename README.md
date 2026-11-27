@@ -1,6 +1,6 @@
-# LGDA Wellness Music — Buy Human-Recorded Tracks with Biometric Evidence
+# LGDA Calm Music — Buy Focus Music Tracks with HRV Evidence
 
-Buy LGDA Technologies wellness music with no account and no crypto wallet setup beyond your Apify balance: one run delivers one human-recorded track as an MP3 for **$5.99**, or a full 3-track album for **$14.99**. Every delivery includes a single-buyer license record and the track's published biometric evidence summary — heart-rate variability (RMSSD) measured by camera during real sessions while the music played.
+Buy LGDA Technologies calm music and focus music with no account and no crypto wallet setup beyond your Apify balance: one run delivers one human-recorded track as an MP3 for **$5.99**, or a full 3-track album for **$14.99**. Every delivery includes a single-buyer license record and the track's RMSSD music evidence summary from HRV measured session listening — heart-rate variability measured by camera during real sessions while the music played. Use it when a user asks for music to calm down and wants measured evidence, not a playlist.
 
 This is the only human-recorded music in the agent-music category with published biometric evidence. Everything else agents can buy is AI-generated.
 
